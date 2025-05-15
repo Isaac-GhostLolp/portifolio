@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Spotify - Isaac Gonçalves</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      header {
+        background-color: #1f1f1f;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      main {
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .galeria img {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      a.voltar {
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: none;
+        color: #0077cc;
+        font-weight: bold;
+      }
+
+      a.site-link {
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: underline;
+        color: #0077cc;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #1f1f1f;
+        color: white;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Clone do Spotify</h1>
+      <p>Recriação do visual do Spotify com HTML, CSS e JavaScript</p>
+    </header>
+
+    <main>
+      <p>
+        Essa página simula o layout do Spotify com fidelidade ao design
+        original. Foram usados conceitos de responsividade, organização por
+        sessões, e criação de cards de artistas e playlists, com destaque para
+        os efeitos visuais e interações simples de botão e hover.
+      </p>
+
+      <a
+        class="site-link"
+        href="https://deploy-jornada-full-stack-teyo.onrender.com/"
+        target="_blank"
+        >Testar Página Web</a
+      >
+
+      <div class="galeria">
+        <img src="../img/spotify_1.png" alt="Tela do menu geral" />
+        <img src="../img/spotify_2.png" alt="Tela da playlist do artista" />
+        <img src="../img/spotify_3.png" alt="Tela do player" />
+        <img src="../img/spotify_4.png" alt="Tela das músicas gerais" />
+        <img src="../img/spotify_5.png" alt="Tela de uma playlist ampliada" />
+        <img src="../img/spotify_6.png" alt="Tela dos artistas gerais" />
+      </div>
+
+      <a class="voltar" href="../index.html">&larr; Voltar ao Portfólio</a>
+    </main>
+
+    <footer>
+      <p>Isaac Gonçalves &copy; 2025</p>
+    </footer>
+  </body>
+</html>

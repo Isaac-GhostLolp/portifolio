@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedéx - Isaac Gonçalves</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      header {
+        background-color: #1f1f1f;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      main {
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .galeria img {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      a.voltar {
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: none;
+        color: #0077cc;
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #1f1f1f;
+        color: white;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Página da Pokédex</h1>
+      <p>Site interativo com listagem e filtros de Pokémon</p>
+    </header>
+
+    <main>
+      <p>
+        Uma Pokédex completa que permite visualizar pokémons por tipo, geração e
+        número. Feita com HTML, CSS e JavaScript, ela busca dados da API e
+        mostra informações de forma visualmente amigável. Ideal para fãs da
+        franquia ou como projeto de aprendizado com consumo de APIs.
+      </p>
+
+      <div class="galeria">
+        <img src="../img/poke_1.png" alt="Tela da interface de dia" />
+        <img src="../img/poke_2.png" alt="Tela da interface de noite" />
+        <img src="../img/poke_3.png" alt="Tela da interface de dia ao centro" />
+        <img
+          src="../img/poke_4.png"
+          alt="Tela da interface de noite ao centro"
+        />
+      </div>
+
+      <a class="voltar" href="../index.html">&larr; Voltar ao Portfólio</a>
+    </main>
+
+    <footer>
+      <p>Isaac Gonçalves &copy; 2025</p>
+    </footer>
+  </body>
+</html>
