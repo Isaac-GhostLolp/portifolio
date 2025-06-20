@@ -11,6 +11,7 @@
         color: #333;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
       }
       header {
         background-color: #333;
@@ -21,10 +22,12 @@
       nav ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 10px;
         padding: 0;
-        margin-top: 2rem;
+        margin: 1.5rem auto;
+        max-width: 100%;
       }
 
       nav ul li {
@@ -150,6 +153,30 @@
         color: #0077cc;
         text-decoration: none;
       }
+
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+
+        nav a {
+          display: block;
+          width: 90%;
+          text-align: center;
+          padding: 12px;
+        }
+
+        header {
+          padding: 1.5rem 1rem;
+        }
+
+        section {
+          margin: 1rem;
+          padding: 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -218,8 +245,6 @@
         <img src="../img/vert_5.jpeg" alt="" class="foto-ampliavel" />
         <img src="../img/vert_6.jpeg" alt="" class="foto-ampliavel" />
       </div>
-
-      <a class="voltar" href="../index.html">&larr; Voltar ao Portfólio</a>
     </main>
 
     <footer>
