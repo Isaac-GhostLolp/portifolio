@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfólio de Isaac Gonçalves Quadros</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f8f8f8;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 0 2rem;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+        margin-top: 2rem;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #000000;
+        background-color: #ffffff;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #353636;
+        color: #ffffff;
+        font-weight: bold;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .galeria-videos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+      }
+
+      .video-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .video-card:hover {
+        transform: scale(1.02);
+      }
+
+      .video-card iframe {
+        width: 100%;
+        height: 200px;
+        border: none;
+      }
+
+      .video-card .descricao {
+        padding: 1rem;
+      }
+
+      .video-card h3 {
+        margin: 0 0 0.5rem 0;
+      }
+
+      footer {
+        margin-top: 4rem;
+        background-color: #1f1f1f;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Vídeos e Gravações</h1>
+      <p>Trabalhos audiovisuais feitos por mim — produção, filmagem e edição</p>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="./projetos.html">Projetos de Programação</a></li>
+          <li><a href="./fotos.html">Fotografia</a></li>
+          <li><a href="./videos.html">Vídeos e Gravações</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Exposição dos Meus Vídeos</h2>
+      <div class="galeria-videos">
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/JvALTbB_1ZQ"
+            allowfullscreen
+          ></iframe>
+          <div class="descricao">
+            <h3>Teaser: Shadow Heist</h3>
+            <p>
+              Teaser experimental feito para o curso de Multimídia sobre um jogo
+              produzido. Explora efeitos visuais e sonoros.
+            </p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/eqAEiRt112o"
+            allowfullscreen
+          ></iframe>
+          <div class="descricao">
+            <h3>Stop Motion – Amor Vilanesco</h3>
+            <p>
+              Vídeo em Stop Motion feito com um grande humor, baseado em
+              personagens da Marvel para a matéria de Múltimidia.
+            </p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/5Wa4Z7Ag2jg"
+            allowfullscreen
+          ></iframe>
+          <div class="descricao">
+            <h3>Curta: Teste de Chroma-Key</h3>
+            <p>
+              Projeto feito apenas para testar o Chroma-Key, feito também com um
+              grande humor e cheio de edições.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Isaac Gonçalves – Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
