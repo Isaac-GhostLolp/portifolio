@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Isaac Gonçalves Quadros</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <span class="brand-icon">⚡</span>
+          <span class="brand-text">Isaac</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./projetos.html">Projetos</a></li>
+          <li><a href="./fotos.html">Fotografia</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BLUR ELEMENTS -->
+    <div class="blur blur-1"></div>
+    <div class="blur blur-2"></div>
+    <div class="blur blur-3"></div>
+
+    <!-- MAIN CONTENT -->
+    <main style="margin-top: 100px; position: relative; z-index: 1;">
+      <section class="content-section">
+        <h1 style="color: var(--color-neon); margin-bottom: 1rem;">Galeria de Fotografia</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+          A fotografia sempre foi uma forma de capturar momentos, histórias e emoções.
+        </p>
+
+        <p>
+          A fotografia sempre foi uma forma de capturar momentos, histórias e
+          emoções através do olhar. Nesta galeria, compartilho algumas imagens que
+          registrei ao longo da minha jornada, explorando luz, composição e
+          sentimento em cada clique. Seja em paisagens, retratos ou cenas
+          cotidianas, meu objetivo é transmitir mais do que uma imagem — é contar
+          algo com ela.
+        </p>
+
+        <div class="galeria">
+          <img src="../assets/tlu_1.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_2.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_3.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_4.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_5.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_6.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_7.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_8.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_9.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_10.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_11.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/tlu_12.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/livre_1.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/livre_2.jpg" alt="" class="foto-ampliavel" />
+          <img src="../assets/livre_3.jpg" alt="" class="foto-ampliavel" />
+          <img src="../assets/livre_4.jpg" alt="" class="foto-ampliavel" />
+          <img src="../assets/livre_5.jpg" alt="" class="foto-ampliavel" />
+          <img src="../assets/livre_6.jpg" alt="" class="foto-ampliavel" />
+          <img src="../assets/zumbi_1.png" alt="" class="foto-ampliavel" />
+          <img src="../assets/geral_ 14.jpeg" alt="" class="foto-ampliavel" />
+          <img src="../assets/vert_1.jpeg" alt="" class="foto-ampliavel" />
+          <img src="../assets/vert_2.jpeg" alt="" class="foto-ampliavel" />
+          <img src="../assets/vert_3.jpeg" alt="" class="foto-ampliavel" />
+          <img src="../assets/vert_5.jpeg" alt="" class="foto-ampliavel" />
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Isaac Gonçalves. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="mailto:isaacgoncalves466@gmail.com">Email</a>
+          <a href="https://github.com/Isaac-GhostLolp" target="_blank">GitHub</a>
+          <a href="https://wa.me/5554999839223" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="overlay">
+      <img src="" alt="Imagem Ampliada" />
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+      const imagens = document.querySelectorAll(".foto-ampliavel");
+      const overlay = document.getElementById("overlay");
+      const imagemAmpliada = overlay.querySelector("img");
+
+      imagens.forEach((img) => {
+        img.addEventListener("click", () => {
+          imagemAmpliada.src = img.src;
+          overlay.style.display = "flex";
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        overlay.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
+
